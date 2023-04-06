@@ -1,3 +1,4 @@
+import InterfaceSegrationPrinciple.DocumentPrint;
 import OpenClosePrinciple.AreaCalculator;
 import OpenClosePrinciple.Circle;
 import OpenClosePrinciple.Rectangle;
@@ -37,6 +38,13 @@ public class Main {
 
         System.out.println("Area of Rectangle: "+rectangleArea);
         System.out.println("Area of Circle: "+circleArea);
+
+        System.out.println("----------------------------------------");
+        DocumentPrint file = new DocumentPrint();
+        file.printDocumentWithPrinter();
+        file.FaxDocument();
+
+
 
     }
 }
